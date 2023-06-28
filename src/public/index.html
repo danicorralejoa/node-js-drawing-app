@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicación de dibujo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <canvas id="canvas"></canvas>
+        <div class="btn-colors">
+            <button class="btn btn-red" onclick="changeColor('red')"></button>
+            <button class="btn btn-green" onclick="changeColor('green')"></button>
+            <button class="btn btn-yellow" onclick="changeColor('yellow')"></button> 
+        
+        <div class="delete">
+            <button class="reset-canvas" onclick="reset_drawing()">Reset!</button>
+        </div>
+        <div id="users"> 
+            <p>Usuarios conectados: 0</p> 
+        </div>
+    </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
